@@ -7,7 +7,7 @@ It can be difficult to monitor and assess resources in large Hyper-V environment
 
 * Creates a plain but detailed and user-friendly HTML report which is compatible with all modern browsers.
 * Has an Overview section which shows momentary cluster resource usage.
-* Storage Overcommitment (see details below)
+* Storage Overcommitment
 * Shows alerts in the report for certain situations (utilizations, vm checkpoints, replication status, etc.)
 * Provides more detailed information via tooltips in the HTML report. (cells with asteriks and highlighted)
 * Includes a mode that reports only alerts in the Hyper-V environment. (aka HighlightsOnly mode)
@@ -15,7 +15,9 @@ It can be difficult to monitor and assess resources in large Hyper-V environment
 * Checks and installs required runtime environment prerequisites like Hyper-V and Clustering Powershells.
 * Can be used directly from command-line or as a scheduled Windows task.
 * Supports report delivery via e-mail with advanced options. (authentication, TLS/SSL, multiple recipients)
-* Advanced error handling and logging. (Console messages and log file) 
+* Advanced error handling and logging. (Console messages and log file)
+* can automatically delete the log file and the most recent report. This is especially helpful if you run this script using Task Scheduler.
+* Tested against Hyper-V Cluster on Windows Server 2022 and 2025
 
 ## Copyright ##
 The original is from: https://github.com/ghostinthewires/Hyper-V-Reporting-Script
